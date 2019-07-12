@@ -34,17 +34,17 @@ class CalculatorBrain {
             operand2String += digit
             return operand2String
         }
-        
-        
     }
+        
+    
     
   func setOperator(_ operatorString: String) {
     ////initalize the enum!!!!! Take the operator string put it in the enum and see whatever it matches
     if let opType = OperatorType(rawValue: operatorString){
         operatorType = opType
-       
-        
     }
+        }
+    
     
    func calculateIfPossible() -> String? {
     if !operand1String.isEmpty {
@@ -76,7 +76,6 @@ class CalculatorBrain {
     }
 
   }
-}
 
  
 
