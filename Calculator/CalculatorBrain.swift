@@ -26,7 +26,7 @@ class CalculatorBrain {
     var operatorType: OperatorType?
     
     func addOperandDigit(digit: String) -> String {
-        if operatorType == nil {
+        if operatorType == nil{
             operand1String += digit
             return operand1String
         }else {

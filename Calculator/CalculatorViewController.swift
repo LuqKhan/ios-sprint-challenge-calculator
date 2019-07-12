@@ -31,13 +31,14 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func operandTapped(_ sender: UIButton) {
         
-    if let digit = sender.titleLabel?.text  {
-            
-        outputLabel.text = brain?.addOperandDigit(digit: digit)
+        
+        if let digit = sender.titleLabel?.text  {
+            if digit == "." { sender.isEnabled = false }
+            else { outputLabel.text = brain?.addOperandDigit(digit: digit)
         
             
         }
-    
+        }
     
     }
     
